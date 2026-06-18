@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f4f45ea18645df73f6b3d40c0fe86054 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f4f45ea18645df73f6b3d40c0fe86054" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f4f45ea18645df73f6b3d40c0fe86054 = L.map(
+                "map_f4f45ea18645df73f6b3d40c0fe86054",
+                {
+                    center: [63.30075875758426, 169.8272843623213],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+
+            
+
+        
+    
+            var tile_layer_c32a2472386b2099732061bf83eb7ec6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c32a2472386b2099732061bf83eb7ec6.addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var marker_7a03a54666dd517838383d0e1d1f1829 = L.marker(
+                [68.53, 160.96],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_b7852e58cfec82a121184e302f635f68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_046aea9f17ca9a07c093dd579a61d14e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_555f63a6a7fa9e7360d60bb2e403e3f1 = $(`<div id="html_555f63a6a7fa9e7360d60bb2e403e3f1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Нижнеколымск — место подготовки и выхода экспедиции</b><br>         Год: 1648<br>         Количество месяцев: 0.5<br>     </div>     </div>`)[0];
+                popup_046aea9f17ca9a07c093dd579a61d14e.setContent(html_555f63a6a7fa9e7360d60bb2e403e3f1);
+            
+        
+
+        marker_7a03a54666dd517838383d0e1d1f1829.bindPopup(popup_046aea9f17ca9a07c093dd579a61d14e)
+        ;
+
+        
+    
+    
+            marker_7a03a54666dd517838383d0e1d1f1829.bindTooltip(
+                `<div>
+                     Нижнеколымск — место подготовки и выхода экспедиции
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a03a54666dd517838383d0e1d1f1829.setIcon(icon_b7852e58cfec82a121184e302f635f68);
+            
+    
+            var marker_74ae1ef47605623a408e15b3c87c1a22 = L.marker(
+                [69.65, 161.0],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_d4e2f4df9e2e575b8b0d5b355e6d5e53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66a4423b2e950830c85fc0c5f6ac152b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3bcc88f6bc70b6c25ac5bd7a3e31c4dd = $(`<div id="html_3bcc88f6bc70b6c25ac5bd7a3e31c4dd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Устье реки Колымы</b><br>         Год: 1648<br>         Количество месяцев: 0.2<br>     </div>     </div>`)[0];
+                popup_66a4423b2e950830c85fc0c5f6ac152b.setContent(html_3bcc88f6bc70b6c25ac5bd7a3e31c4dd);
+            
+        
+
+        marker_74ae1ef47605623a408e15b3c87c1a22.bindPopup(popup_66a4423b2e950830c85fc0c5f6ac152b)
+        ;
+
+        
+    
+    
+            marker_74ae1ef47605623a408e15b3c87c1a22.bindTooltip(
+                `<div>
+                     Устье реки Колымы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74ae1ef47605623a408e15b3c87c1a22.setIcon(icon_d4e2f4df9e2e575b8b0d5b355e6d5e53);
+            
+    
+            var marker_90f1331d77f24fa2dbea1716797812e0 = L.marker(
+                [69.0, 175.0],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_41573c8a813c8e7ec29e12bf4a41a5cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dc2be963255b31e3f397f9d9b2b6622 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2725dfe63831a2e93b15c307fb1d3210 = $(`<div id="html_2725dfe63831a2e93b15c307fb1d3210" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Северное побережье Чукотского полуострова</b><br>         Год: 1648<br>         Количество месяцев: 1.5<br>     </div>     </div>`)[0];
+                popup_0dc2be963255b31e3f397f9d9b2b6622.setContent(html_2725dfe63831a2e93b15c307fb1d3210);
+            
+        
+
+        marker_90f1331d77f24fa2dbea1716797812e0.bindPopup(popup_0dc2be963255b31e3f397f9d9b2b6622)
+        ;
+
+        
+    
+    
+            marker_90f1331d77f24fa2dbea1716797812e0.bindTooltip(
+                `<div>
+                     Северное побережье Чукотского полуострова
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90f1331d77f24fa2dbea1716797812e0.setIcon(icon_41573c8a813c8e7ec29e12bf4a41a5cc);
+            
+    
+            var marker_1a6397ce36c5ecf658fad1d0681b1658 = L.marker(
+                [66.08, -169.67],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_87d93f5d7e59d3a83e90407c2121b97d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c8f6e2bb67c751fe8ee07ec15d2842c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9998a132aec6dbfc74bf872aeeaa23b2 = $(`<div id="html_9998a132aec6dbfc74bf872aeeaa23b2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Большой Каменный Нос — район мыса Дежнёва</b><br>         Год: 1648<br>         Количество месяцев: 0.2<br>     </div>     </div>`)[0];
+                popup_1c8f6e2bb67c751fe8ee07ec15d2842c.setContent(html_9998a132aec6dbfc74bf872aeeaa23b2);
+            
+        
+
+        marker_1a6397ce36c5ecf658fad1d0681b1658.bindPopup(popup_1c8f6e2bb67c751fe8ee07ec15d2842c)
+        ;
+
+        
+    
+    
+            marker_1a6397ce36c5ecf658fad1d0681b1658.bindTooltip(
+                `<div>
+                     Большой Каменный Нос — район мыса Дежнёва
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a6397ce36c5ecf658fad1d0681b1658.setIcon(icon_87d93f5d7e59d3a83e90407c2121b97d);
+            
+    
+            var marker_a8d9f583e7abbc3dd8187d2efd489a8d = L.marker(
+                [65.76, -168.95],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_fe8990a819db18889b59030de633d81b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47ca86ebae18decadff224c715f306a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30eafad9f9ad727a3ec135c401d6f100 = $(`<div id="html_30eafad9f9ad727a3ec135c401d6f100" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Острова Диомида — предполагаемый район прохождения</b><br>         Год: 1648<br>         Количество месяцев: 0.1<br>     </div>     </div>`)[0];
+                popup_47ca86ebae18decadff224c715f306a7.setContent(html_30eafad9f9ad727a3ec135c401d6f100);
+            
+        
+
+        marker_a8d9f583e7abbc3dd8187d2efd489a8d.bindPopup(popup_47ca86ebae18decadff224c715f306a7)
+        ;
+
+        
+    
+    
+            marker_a8d9f583e7abbc3dd8187d2efd489a8d.bindTooltip(
+                `<div>
+                     Острова Диомида — предполагаемый район прохождения
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8d9f583e7abbc3dd8187d2efd489a8d.setIcon(icon_fe8990a819db18889b59030de633d81b);
+            
+    
+            var marker_e943a09e9a91a89a4d8cd3aa6bad1235 = L.marker(
+                [65.9, -170.2],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_6fe0e85b19a28a70fc741647d11a87f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_323b46ca29bafd6fbb06c3542b20ae31 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a443fe4e42a118d79324b1bda914f8e0 = $(`<div id="html_a443fe4e42a118d79324b1bda914f8e0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Северо-восточное побережье Чукотки — предполагаемое место столкновения</b><br>         Год: 1648<br>         Количество месяцев: 0.1<br>     </div>     </div>`)[0];
+                popup_323b46ca29bafd6fbb06c3542b20ae31.setContent(html_a443fe4e42a118d79324b1bda914f8e0);
+            
+        
+
+        marker_e943a09e9a91a89a4d8cd3aa6bad1235.bindPopup(popup_323b46ca29bafd6fbb06c3542b20ae31)
+        ;
+
+        
+    
+    
+            marker_e943a09e9a91a89a4d8cd3aa6bad1235.bindTooltip(
+                `<div>
+                     Северо-восточное побережье Чукотки — предполагаемое место столкновения
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e943a09e9a91a89a4d8cd3aa6bad1235.setIcon(icon_6fe0e85b19a28a70fc741647d11a87f3);
+            
+    
+            var marker_7197e44b6e52c6005cbf6f9eeeb09f2f = L.marker(
+                [60.3, 170.2],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_4c0ed413bb091b6e92aef020a35a8661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0f95836b48b9c4edaed205c45a2c0fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_619ea06fa6d92e98eac3d38034fdaae4 = $(`<div id="html_619ea06fa6d92e98eac3d38034fdaae4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Район Олюторского полуострова — предполагаемое место крушения коча</b><br>         Год: 1648<br>         Количество месяцев: 0.2<br>     </div>     </div>`)[0];
+                popup_b0f95836b48b9c4edaed205c45a2c0fc.setContent(html_619ea06fa6d92e98eac3d38034fdaae4);
+            
+        
+
+        marker_7197e44b6e52c6005cbf6f9eeeb09f2f.bindPopup(popup_b0f95836b48b9c4edaed205c45a2c0fc)
+        ;
+
+        
+    
+    
+            marker_7197e44b6e52c6005cbf6f9eeeb09f2f.bindTooltip(
+                `<div>
+                     Район Олюторского полуострова — предполагаемое место крушения коча
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7197e44b6e52c6005cbf6f9eeeb09f2f.setIcon(icon_4c0ed413bb091b6e92aef020a35a8661);
+            
+    
+            var marker_409267d54417084398cb74852e39e62f = L.marker(
+                [62.5, 172.0],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_7a5d8c8e79ef13a19eefd59b7f250842 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_734b2d1fd859f9dacb7025095e619a85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bee7375cc59e4d1b6589616e58398902 = $(`<div id="html_bee7375cc59e4d1b6589616e58398902" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Переход через Корякское нагорье к реке Анадырь</b><br>         Год: 1648<br>         Количество месяцев: 2.5<br>     </div>     </div>`)[0];
+                popup_734b2d1fd859f9dacb7025095e619a85.setContent(html_bee7375cc59e4d1b6589616e58398902);
+            
+        
+
+        marker_409267d54417084398cb74852e39e62f.bindPopup(popup_734b2d1fd859f9dacb7025095e619a85)
+        ;
+
+        
+    
+    
+            marker_409267d54417084398cb74852e39e62f.bindTooltip(
+                `<div>
+                     Переход через Корякское нагорье к реке Анадырь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_409267d54417084398cb74852e39e62f.setIcon(icon_7a5d8c8e79ef13a19eefd59b7f250842);
+            
+    
+            var marker_607394bd55469e0fc482559fc0065aeb = L.marker(
+                [64.73, 177.52],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_08c3b8b25b39f6cc5f1a3dadbf5f0ffc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a0331c10151a76ebeea848426559f5c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7704bc6adc91a586790d2c5600d3388e = $(`<div id="html_7704bc6adc91a586790d2c5600d3388e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Низовья Анадыря — район первой зимовки</b><br>         Год: 1648-1649<br>         Количество месяцев: 6.0<br>     </div>     </div>`)[0];
+                popup_5a0331c10151a76ebeea848426559f5c.setContent(html_7704bc6adc91a586790d2c5600d3388e);
+            
+        
+
+        marker_607394bd55469e0fc482559fc0065aeb.bindPopup(popup_5a0331c10151a76ebeea848426559f5c)
+        ;
+
+        
+    
+    
+            marker_607394bd55469e0fc482559fc0065aeb.bindTooltip(
+                `<div>
+                     Низовья Анадыря — район первой зимовки
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_607394bd55469e0fc482559fc0065aeb.setIcon(icon_08c3b8b25b39f6cc5f1a3dadbf5f0ffc);
+            
+    
+            var marker_e858fb4e31369bb574284d606d2121bc = L.marker(
+                [64.68, 170.42],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_a8f9cf536863c4522430be738cfcabdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b8b9bed0968d0a95bea389a4ec45085 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d27720cc2cdc7c293ad5d2698bfcfb6e = $(`<div id="html_d27720cc2cdc7c293ad5d2698bfcfb6e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Среднее течение Анадыря — район Анадырского зимовья близ современного Маркова</b><br>         Год: 1649-1659<br>         Количество месяцев: 114.0<br>     </div>     </div>`)[0];
+                popup_9b8b9bed0968d0a95bea389a4ec45085.setContent(html_d27720cc2cdc7c293ad5d2698bfcfb6e);
+            
+        
+
+        marker_e858fb4e31369bb574284d606d2121bc.bindPopup(popup_9b8b9bed0968d0a95bea389a4ec45085)
+        ;
+
+        
+    
+    
+            marker_e858fb4e31369bb574284d606d2121bc.bindTooltip(
+                `<div>
+                     Среднее течение Анадыря — район Анадырского зимовья близ современного Маркова
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e858fb4e31369bb574284d606d2121bc.setIcon(icon_a8f9cf536863c4522430be738cfcabdb);
+            
+    
+            var marker_bfbb8e88d62316236c4c28d4be97a9d1 = L.marker(
+                [64.75, 177.5],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_7f2870f858929257287e1679662610c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d590c79c1b3372022fb635927be52146 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3b482fb1d745c68f0836eaf25995a00 = $(`<div id="html_d3b482fb1d745c68f0836eaf25995a00" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Анадырский лиман и прилегающие берега — походы к моржовым лежбищам</b><br>         Год: 1650-е<br>         Количество месяцев: 6.0<br>     </div>     </div>`)[0];
+                popup_d590c79c1b3372022fb635927be52146.setContent(html_d3b482fb1d745c68f0836eaf25995a00);
+            
+        
+
+        marker_bfbb8e88d62316236c4c28d4be97a9d1.bindPopup(popup_d590c79c1b3372022fb635927be52146)
+        ;
+
+        
+    
+    
+            marker_bfbb8e88d62316236c4c28d4be97a9d1.bindTooltip(
+                `<div>
+                     Анадырский лиман и прилегающие берега — походы к моржовым лежбищам
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfbb8e88d62316236c4c28d4be97a9d1.setIcon(icon_7f2870f858929257287e1679662610c9);
+            
+    
+            var marker_42585c814457d625978b8338317a1d21 = L.marker(
+                [68.3, 163.0],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_d00dbf0b34a241763e60b10ceeb87ea6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d676c89d5d7d95929e04e6432d8510a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a1dd4e1ff2ffbf2edb98154e923ee9c = $(`<div id="html_4a1dd4e1ff2ffbf2edb98154e923ee9c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Анюйский хребет и бассейн рек Большой и Малый Анюй — обратный путь</b><br>         Год: 1659-1660<br>         Количество месяцев: 4.0<br>     </div>     </div>`)[0];
+                popup_d676c89d5d7d95929e04e6432d8510a7.setContent(html_4a1dd4e1ff2ffbf2edb98154e923ee9c);
+            
+        
+
+        marker_42585c814457d625978b8338317a1d21.bindPopup(popup_d676c89d5d7d95929e04e6432d8510a7)
+        ;
+
+        
+    
+    
+            marker_42585c814457d625978b8338317a1d21.bindTooltip(
+                `<div>
+                     Анюйский хребет и бассейн рек Большой и Малый Анюй — обратный путь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42585c814457d625978b8338317a1d21.setIcon(icon_d00dbf0b34a241763e60b10ceeb87ea6);
+            
+    
+            var marker_70779cf8978de44635c206276692aece = L.marker(
+                [68.54, 161.08],
+                {
+}
+            ).addTo(map_f4f45ea18645df73f6b3d40c0fe86054);
+        
+    
+            var icon_83c24cf85df1a260f476b93ba6731a30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6bacf58a586af6e43a4a215c2560679 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6aa5fc2a47471f31ce908a6d51477bd4 = $(`<div id="html_6aa5fc2a47471f31ce908a6d51477bd4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 220px">         <b>Колыма — завершение обратного сухопутного перехода</b><br>         Год: 1660<br>         Количество месяцев: 1.0<br>     </div>     </div>`)[0];
+                popup_c6bacf58a586af6e43a4a215c2560679.setContent(html_6aa5fc2a47471f31ce908a6d51477bd4);
+            
+        
+
+        marker_70779cf8978de44635c206276692aece.bindPopup(popup_c6bacf58a586af6e43a4a215c2560679)
+        ;
+
+        
+    
+    
+            marker_70779cf8978de44635c206276692aece.bindTooltip(
+                `<div>
+                     Колыма — завершение обратного сухопутного перехода
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70779cf8978de44635c206276692aece.setIcon(icon_83c24cf85df1a260f476b93ba6731a30);
+            
+</script>
+</html>
